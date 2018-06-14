@@ -577,7 +577,7 @@
                 "sha256:65540c21bfe14405a3a77e4c085ecfce88724743a4ead47c66b84defcf82c32e",
                 "sha256:9ce5fa65b8992dfa373bddc5b6e0864ead8f291c94fbfec05fbd5c836162e67b"
             ],
-            "markers": "platform_system == 'fake'",
+            "markers": "platform_system !='fake'",
             "version": "==2.1"
         },
         "pyroma": {
