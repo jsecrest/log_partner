@@ -1,0 +1,7 @@
+[all]
+ignore = **/*.log
+[python]
+files = **/*.py
+bears = PEP8Bear
+# default_actions ="*: ApplyPatchAction"
+language = python
