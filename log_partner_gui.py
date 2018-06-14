@@ -1,16 +1,17 @@
-
 import kivy
-kivy.require('0.1.4')
+kivy.require('1.10.0')
 
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.uix.widget import Widget
 
+class LogParser(Widget):
+    pass
 
-class MyApp(App):
+class LogPartnerApp(App):
 
     def build(self):
-        return Label(text='Hello world')
+        return LogParser()
 
 
 if __name__ == '__main__':
-    MyApp().run()
+    LogPartnerApp().run()

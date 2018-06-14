@@ -1,0 +1,23 @@
+#:kivy 1.10.0
+
+<LogParser>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: 'horizontal'
+
+        ScrollView:
+            size_hint : .75, 1
+
+            CodeInput:
+                auto_indent: True
+                text : 'Load a file...'
+                readonly: True
+
+        Splitter:
+            size_hint: .25, 1
+            sizable_from: 'left'
+            keep_within_parent: True
+            rescale_with_parent: True
+
+            FileChooserListView:
